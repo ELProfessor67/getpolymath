@@ -1,0 +1,405 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script defer src="/main.js"></script>
+
+    <link href="/output.css" rel="stylesheet">
+    <link href="/assets/css/general-sans.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header  -->
+    <header class="w-full px-4 py-4  bg-black">
+        <div class="container mx-auto flex justify-between items-center">
+            <h2 class="text-white font-bold">polymath.ai</h2>
+            <div class="nav-items hidden md:block">
+                <ul class="flex items-center gap-3 text-white">
+                    <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                        <a href="#" class="flex items-center gap-1">Polymaths <ion-icon
+                                name="chevron-down-outline"></ion-icon></a>
+                    </li>
+                    <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                        <a href="#" class="flex items-center gap-1">Abouts <ion-icon
+                                name="chevron-down-outline"></ion-icon></a>
+
+                    </li>
+                    <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                        <a href="#">Resources</a>
+                    </li>
+                    <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="buttons items-center gap-3 hidden md:flex">
+
+                <a href="#" class="text-white font-normal py-1 px-2 mx-2">Log In</a>
+                <button class="bg-white px-4 py-2 rounded-3xl text-black/80 font-bold">Hire Polymath</button>
+            </div>
+
+
+            <button class="!text-white text-2xl md:hidden relative z-[10000000000000]" id="menu">
+                <img src="/assets/images/menu.svg" id="menu-image"/>
+            </button>
+
+            <div class="absolute top-0 bg-white h-screen z-[1000] w-[100vw] -left-[110%] flex items-center justify-center transition-all" id="nav-container">
+                <div>
+                    <ul class="flex items-center gap-3 text-black/80 flex-col">
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#" class="flex items-center gap-1">Polymaths <ion-icon
+                                    name="chevron-down-outline"></ion-icon></a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#" class="flex items-center gap-1">Abouts <ion-icon
+                                    name="chevron-down-outline"></ion-icon></a>
+    
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Pricing</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="buttons items-center gap-3  flex flex-col mt-2">
+
+                        <a href="#" class="text-black/80 font-normal py-1 px-2 mx-2">Log In</a>
+                        <button class="bg-black px-4 py-2 rounded-3xl text-white font-bold">Hire Polymath</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- hero section  -->
+    <main>
+        <section class="section !pb-0 bg-black">
+            <div class="container mx-auto">
+                <div class="flex items-center justify-center flex-col gap-4">
+                    <div
+                        class=" text-white text-3xl md:text-5xl leading-7 flex flex-col font-semibold gap-2 md:gap-4 justify-center items-center">
+                        <h1 class="source-serif" style="font-style: italic;">We Create Empowering </h1>
+                        <h1 class="flex items-center">
+                            <span class="source-serif" style="font-style: italic;">Teams</span>
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                            <span>With Intelligent</span>
+                        </h1>
+                        <h1>Collaboration</h1>
+                    </div>
+                    <p class="para text-white max-w-[28rem] text-center mt-5">
+                        Polymaths are AI digital workers that integrate seamlessly with human teams.
+                    </p>
+
+                    <div class="max-w-[25rem] bg-primary px-4 rounded-3xl flex items-center gap-3 py-1">
+                        <input type="text" class="flex-1 text-white !bg-primary border-none outline-none"
+                            placeholder="Enter your email" />
+                        <button
+                            class="w-[2.5rem] h-[2.5rem] bg-blue-1 text-white text-xl rounded-full flex items-center justify-center">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+
+                <div>
+                    <figure class="w-full relative">
+                        <img src="/assets/images/hero-image.png" class="w-full" />
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- brands -->
+    <section class="px-10 py-14">
+        <div class="container mx-auto flex items-center overflow-x-auto gap-10 justify-center">
+            <figure>
+                <img class="w-full" src="/assets/images/logo1.svg" />
+            </figure>
+            <figure>
+                <img class="w-full" src="/assets/images/logo2.svg" />
+            </figure>
+            <figure>
+                <img class="w-full" src="/assets/images/logo3.svg" />
+            </figure>
+            <figure>
+                <img class="w-full" src="/assets/images/logo4.svg" />
+            </figure>
+            <figure>
+                <img class="w-full" src="/assets/images/logo5.svg" />
+            </figure>
+            <figure>
+                <img class="w-full" src="/assets/images/logo6.svg" />
+            </figure>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container mx-auto">
+
+            <div class="mb-10">
+                <button class="py-2 px-4 rounded-3xl bg-blue-light text-blue-2 mx-auto block">Features</button>
+                <h2 class="text-3xl font-semibold leading-10 max-w-[39rem] text-center block mx-auto mt-5">Polymath.Ai
+                    Are Pioneering the Era of Human-Like Digital Workers</h2>
+            </div>
+
+            <div class="flex items-center justify-center flex-wrap gap-8">
+                <div class="w-[18rem] flex items-center justify-center gap-5 flex-col">
+                    <button class="w-[3rem] h-[3rem] rounded-xl bg-blue-1 flex items-center justify-center">
+                        <img src="/assets//images/route.png" />
+                    </button>
+                    <h3 class="text-xl font-semibold text-center w-[18rem]">Seamless End-to-End Workflow Automation</h3>
+                    <p class="para text-center">Polymaths are AI digital workers that integrate seamlessly with human
+                        teams, she can be onboarded in 10 minutes.</p>
+                </div>
+                <div class="w-[18rem] flex items-center justify-center gap-5 flex-col">
+                    <button class="w-[3rem] h-[3rem] rounded-xl bg-blue-1 flex items-center justify-center">
+                        <img src="/assets//images/users-up.png" />
+                    </button>
+                    <h3 class="text-xl font-semibold text-center w-[18rem]">Active Contributors to Your Team</h3>
+                    <p class="para text-center">Polymaths go beyond SaaS tools, they're team additions. Engage with them
+                        on web/Slack, and they understand your needs personally.</p>
+                </div>
+                <div class="w-[18rem] flex items-center justify-center gap-5 flex-col">
+                    <button class="w-[3rem] h-[3rem] rounded-xl bg-blue-1 flex items-center justify-center">
+                        <img src="/assets//images/message-dots-square.png" />
+                    </button>
+                    <h3 class="text-xl font-semibold text-center w-[18rem]">Onboard in Less Than 10 Minutes</h3>
+                    <p class="para text-center">Onboard your Polymath with a simple 10-minute conversation—no technical
+                        or domain-specific skills needed. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="bg-black section">
+        <div class="container mx-auto">
+
+
+            <div class="mb-10">
+                <button
+                    class="py-2 px-4 rounded-3xl bg-primary !text-foreground-white-1 mx-auto block">Features</button>
+                <h2 class="text-3xl font-semibold leading-10 max-w-[39rem] text-white text-center block mx-auto mt-5">
+                    Polymath.Ai Are Pioneering the Era of Human-Like Digital Workers</h2>
+            </div>
+
+            <div class="flex items-center justify-center gap-8 flex-wrap">
+                <div
+                    class="w-[18rem] min-h-[25rem] rounded-3xl border border-foreground-white-3 gradient p-8 pb-0 flex items-center flex-col gap-3">
+                    <h2 class="text-white text-xl font-semibold">Liam, The Marketer</h2>
+                    <p class="para text-foreground-white-2 !text-[16px] text-center w-[12rem]">Supercharge Your Growth
+                        Without Huge Overheads</p>
+                    <figure class="absolute bottom-0">
+                        <img src="/assets/images/wrapper1.png" />
+                    </figure>
+                </div>
+                <div
+                    class="w-[18rem] min-h-[25rem] rounded-3xl border border-foreground-white-3 gradient p-8 pb-0 flex items-center flex-col gap-3">
+                    <h2 class="text-white text-xl font-semibold">James, The CS Rep</h2>
+                    <p class="para text-foreground-white-2 !text-[16px] text-center w-[12rem]">Support Your Customers
+                        With Unparaleled Product Knowledge</p>
+                    <figure class="absolute bottom-0">
+                        <img src="/assets/images/wrapper2.png" />
+                    </figure>
+                </div>
+                <div
+                    class="w-[18rem] min-h-[25rem] rounded-3xl border border-foreground-white-3 gradient p-8 pb-0 flex items-center flex-col gap-3">
+                    <h2 class="text-white text-xl font-semibold">Anna, The Sales Rep</h2>
+                    <p class="para text-foreground-white-2 !text-[16px] text-center w-[12rem]">Supercharge your outbound
+                        sales, ar scale</p>
+                    <figure class="absolute bottom-0">
+                        <img src="/assets/images/wrapper3.png" />
+                    </figure>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section bg-secondary ">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap relative p-4 gap-10 md:gap-0 mt-16">
+                <div class="w-full md:w-[50%] md:pl-10">
+                    <h2 class="font-semibold text-2xl max-w-[18rem] text-center md:text-left block mx-auto md:mx-0">
+                        Automate Job Workflows From End to End</h2>
+                    <p class="para mt-5 text-center md:text-left">
+                        Through our own feature rich SaaS platform and API integrations with other tools you use on a
+                        daily basis, Artisans can perform 1000s of tasks with minimal human input.
+                    </p>
+                    <button
+                        class="mt-5 text-white py-2 px-4 rounded-3xl bg-blue-1 font-semibold mx-auto md:mx-0 block">Meet
+                        Polymath AI</button>
+                </div>
+                <div class="w-full md:w-[50%] relative">
+                    <figure class="w-full flex justify-center">
+                        <img src="/assets/images/f1.png" class="w-[70%] md:w-[75%]" />
+                    </figure>
+                </div>
+            </div>
+            <div class="flex flex-wrap relative p-4 gap-10 md:gap-0 my-32">
+                <div class="w-full md:w-[50%] md:pl-10">
+                    <h2 class="font-semibold text-2xl max-w-[18rem] text-center md:text-left block mx-auto md:mx-0">They
+                        Use Our Feature-Rich SaaS Platform</h2>
+                    <p class="para mt-5 text-center md:text-left">
+                        We are building a feature-rich SaaS platform which Polumath.Ai operate within.
+                    </p>
+                    <p class="para mt-5 text-center md:text-left bg-white p-2 px-4 rounded-md !font-semibold">
+                        Either you, or your Polymath.Ai, can do anything within the platform.
+                    </p>
+                    <p class="para mt-5 text-center md:text-left bg-white p-2 px-4 rounded-md !font-semibold">
+                        We are developing 100s of features to become the only platform you need.
+                    </p>
+                    <button
+                        class="mt-5 text-white py-2 px-4 rounded-3xl bg-blue-1 font-semibold mx-auto md:mx-0 block">Meet
+                        Polymath AI</button>
+                </div>
+                <div class="w-full md:w-[50%] relative">
+                    <figure class="w-full flex justify-center">
+                        <img src="/assets/images/f2.png" class="w-[70%] md:w-[75%]" />
+                    </figure>
+                </div>
+            </div>
+            <div class="flex flex-wrap relative p-4 gap-10 md:gap-0 mb-16">
+                <div class="w-full md:w-[50%] md:pl-10">
+                    <h2 class="font-semibold text-2xl max-w-[18rem] text-center md:text-left block mx-auto md:mx-0">Just
+                        Chat - Artisans Can Use All Platform Features</h2>
+                    <p class="para mt-5 text-center md:text-left">
+                        We are building a feature-rich SaaS platform which Polumath.Ai operate within.Chat with your
+                        Polymath.Ai via our web chat or Slack app. You can ask them to do task, change settings, do
+                        research, or just seek some advice
+                    </p>
+                    <p class="para mt-5 text-center md:text-left !font-semibold">
+                        They'll even send you unpromted updates & suggestions.
+                    </p>
+                    <button
+                        class="mt-5 text-white py-2 px-4 rounded-3xl bg-blue-1 font-semibold mx-auto md:mx-0 block">Meet
+                        Polymath AI</button>
+                </div>
+                <div class="w-full md:w-[50%] relative">
+                    <figure class="w-full flex justify-center">
+                        <img src="/assets/images/f3.png" class="w-[70%] md:w-[75%]" />
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap relative p-4 gap-10 md:gap-0 my-16">
+                <div class="w-full md:w-[50%] relative">
+                    <figure class="w-full flex justify-center">
+                        <img src="/assets/images/f4.png" class="w-[70%] md:w-[75%]" />
+                    </figure>
+                </div>
+                <div class="w-full md:w-[50%] md:pl-10">
+                    <button class="py-2 px-4 rounded-3xl bg-blue-light text-blue-2 mb-5">Up to date data</button>
+                    <h2 class="font-semibold text-2xl max-w-[18rem] text-center md:text-left block mx-auto md:mx-0">Polymath.Ai Self-Improve Every Single Day</h2>
+                    <p class="para mt-5 text-center md:text-left">
+                        Through the messages you send to your Polymath.Ai , your Polymath.Ai independent research, the data we collect during your interaction with the dashboard, and new features we introduce, your Artisan is constantly improving.
+                    </p>
+                    <button
+                        class="mt-5 text-white py-2 px-4 rounded-3xl bg-blue-1 font-semibold mx-auto md:mx-0 block">Meet
+                        Polymath AI</button>
+                </div>
+                
+            </div>
+
+            <figure class="w-full">
+                <img src="/assets/images/banner.png" class="w-full"/>
+            </figure>
+        </div>
+    </section>
+
+
+    <footer class="section bg-black">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap gap-8 md:gap-0">
+                <div class="w-full md:w-[50%]">
+                    <h2 class="font-semibold text-white text-2xl text-center md:text-left">Subscribe for new updates!</h2>
+                </div>
+                <div class="w-full md:w-[50%] flex items-center justify-center ">
+                    <div class="w-[30rem] bg-primary px-4 rounded-3xl flex items-center gap-3 py-1">
+                        <input type="text" class="flex-1 text-white !bg-primary border-none outline-none"
+                            placeholder="Enter your email" />
+                        <button
+                            class="w-[2.5rem] h-[2.5rem] bg-blue-1 text-white text-xl rounded-full flex items-center justify-center">
+                            <ion-icon name="arrow-forward-outline"></ion-icon>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex flex-wrap my-16 gap-8 md:gap-0">
+                <div class="w-full md:w-[50%] flex items-center flex-col justify-center md:block">
+                    <h2 class="font-semibold text-white text-xl">polymath.ai</h2>
+                    <p class="mt-5 para !text-sm text-[#D8D8D8] max-w-[17rem] text-center md:text-left">
+                        Polymaths are  AI digital workers that integrate seamlessly with human teams.
+                    </p>
+                </div>
+                <div class="w-full md:w-[50%] flex justify-around">
+                    <ul class="flex flex-col gap-8 text-white">
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Polymaths</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">About</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Pricing</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-8 text-white">
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Resources</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Contact</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                    <ul class="flex flex-col gap-8 text-white">
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Terms and Service</a>
+                        </li>
+                        <li class="cursor-pointer font-normal py-1 px-2 mx-2">
+                            <a href="#">Cookie</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="flex justify-between items-stretch">
+                <p class="mt-5 para !text-sm text-[#D8D8D8] ">
+                    Polymath AI © 2024
+                </p>
+                <p class="mt-5 para !text-sm text-[#D8D8D8] ">
+                    Design by Zeeshan Raza
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+
+</body>
+
+</html>
