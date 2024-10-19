@@ -878,6 +878,14 @@ video {
   display: none;
 }
 
+.aspect-\[4\/1\]{
+  aspect-ratio: 4/1;
+}
+
+.aspect-\[4\/2\]{
+  aspect-ratio: 4/2;
+}
+
 .h-\[2\.5rem\]{
   height: 2.5rem;
 }
@@ -890,16 +898,16 @@ video {
   height: 100vh;
 }
 
-.min-h-\[25rem\]{
-  min-height: 25rem;
+.min-h-\[28rem\]{
+  min-height: 28rem;
 }
 
 .w-\[100vw\]{
   width: 100vw;
 }
 
-.w-\[12rem\]{
-  width: 12rem;
+.w-\[16rem\]{
+  width: 16rem;
 }
 
 .w-\[18rem\]{
@@ -2129,6 +2137,10 @@ video {
 
 .p-4{
   padding: 1rem;
+}
+
+.p-5{
+  padding: 1.25rem;
 }
 
 .p-8{
